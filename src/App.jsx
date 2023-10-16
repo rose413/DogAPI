@@ -119,7 +119,6 @@ function App() {
                   height="50px" 
                   width="50px"
                 />
-                <p>A {item.name} dog from {item.origin}</p>
               </li>
             ))
           ) : (
