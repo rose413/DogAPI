@@ -113,13 +113,13 @@ function App() {
             historyList.map((item, index) => (
               <li className="gallery" key={index}>
                 <img
-                  className="cat-pic"
+                  className="dog-pic"
                   src={item.url}
-                  alt="Random Cat" 
+                  alt="Random Dog" 
                   height="50px" 
                   width="50px"
                 />
-                <p>A {item.name} cat from {item.origin}</p>
+                <p>A {item.name} dog from {item.origin}</p>
               </li>
             ))
           ) : (
