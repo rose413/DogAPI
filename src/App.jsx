@@ -11,7 +11,6 @@ function App() {
   const [attribute, setAttributes] = useState({
     name: "",
     weight: "",
-    origin: "",
     life_span: ""
 });
 
@@ -35,13 +34,12 @@ function App() {
     setAttributes({
       name: stats.name,
       weight: stats.weight.imperial + " lbs",
-      origin: stats.origin,
-      life_span: stats.life_span + " years",
+      life_span: stats.life_span ,
     });
     setCurrentImage(json[0].url);
     setHistoryList((historyList) => [
       ...historyList,
-      { url: json[0].url, name: attribute.name, origin: attribute.origin },
+      { url: json[0].url, name: attribute.name},
     ]);
   };
 
